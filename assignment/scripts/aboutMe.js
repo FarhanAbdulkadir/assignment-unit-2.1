@@ -18,7 +18,7 @@ console.log(luckyNumber)
 
 // 5 - Create a variable `introduction` and using the variables from above,
 //     give it the value of:
-let introduction = 'my name is ${fullName} and I think my ${luckyNumber} is the winner';
+let introduction = 'my name is ${fullName} and I think ${luckyNumber} is a winner';
 //     'My name is (full name), and I think (lucky number) is a winner!'.
 //     Refer back to the videos if you need help with this one.
 //     Console log the value of `introduction`
@@ -35,7 +35,7 @@ console.log(food);
 
 // 8 - Create a variable called `pets` and set it to the value of the number of pets you have
 //     Console log the value of `pets`
-let pets = 1
+let pets =1;
 console.log(pets)
 
 // 9 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
@@ -43,7 +43,7 @@ let friendsPets = 2;
 
 
 // 10 - Add two pets to your `pets` variable
-let sum=+2;
+pets=+2;
 // 11 - Create a constant variable called `allowedPets` and set it to a number value of your choice
 const allowedPets =5;
 
@@ -51,13 +51,23 @@ const allowedPets =5;
 //      if adventurous is true, set `result` to be "Adventures are great!", 
 //      if it's not true,  set `result` to be "How about we stay home?"
 //      Console log the value of `result`
-
+let result;
+if(adventurous){
+  result = "Adventures are great!";
+}else{
+  result = "How about we stay home?"
+}
+console.log(result);
 // 13 - Create a variable called `diceRoll` and set it to the value of "Try again later.".
 //      Create a compound conditional: 
 //      if luckyNumber is 2 and adventurous is true,
 //      set `diceRoll` to be "Roll the dice!"
 //      Console log the value of `diceRoll`
-
+let diceRoll = "Try again later."
+if(luckyNumber===2 && adventurous){
+  diceRoll = 'to be "Roll the dice!'
+}
+console.log(diceRoll);
 // 14 - Create a variable called `petStatus`. 
 //      Write a conditional that covers the following:
 //      if the value of `pets` is less than the value of `allowedPets`,
