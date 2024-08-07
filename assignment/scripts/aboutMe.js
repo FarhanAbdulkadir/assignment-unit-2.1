@@ -13,12 +13,12 @@ console.log(fullName);
 
 // 4 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
 //     Console log the value of `luckyNumber`
-let luckyNumber=77;
+let luckyNumber=3;
 console.log(luckyNumber)
 
 // 5 - Create a variable `introduction` and using the variables from above,
 //     give it the value of:
-let introduction = 'my name is ${fullName} and I think ${luckyNumber} is a winner';
+let introduction = `my name is ${fullName} and I think ${luckyNumber} is a winner`;
 //     'My name is (full name), and I think (lucky number) is a winner!'.
 //     Refer back to the videos if you need help with this one.
 //     Console log the value of `introduction`
@@ -76,7 +76,15 @@ console.log(diceRoll);
 //      set `petStatus` to the value of "I have enough pets" 
 //      if the value of `pets` is greater than the value of `allowedPets`.
 //      set `petStatus` to the value of "Oh no, I have too many pets!"
-
+let petStatus;
+if(pets<allowedPets){
+  petStatus ="I can have more pets" ;
+}else if (pets===allowedPets){
+  petStatus = "I have enough pets" ;
+}else  {
+  petStatus = "Oh no, I have too many pets!"
+}
+console.log(petStatus)
 
 // STRETCH GOALS:
 
@@ -94,6 +102,25 @@ console.log(diceRoll);
 //      Otherwise, "Luck is what happens when preparation meets opportunity"
 //      You'll need to research how to use switch statements!
 //      console.log `luckyResult` after the conditional has run.
+
+let luckyResult;
+switch(luckyNumber){
+  case 1:
+    luckyResult= "First is the worst";
+    break;
+    case 2:
+    luckyResult= "Second is the best";
+    break;
+    case 3:
+    luckyResult= "Third is the one with the polka dot dress";
+    break;
+    default:
+      luckyResult="Luck is what happens when preparation meets opportunity";
+      break;
+}
+  
+console.log(luckyResult);
+
 
 // 17 -- Rewrite question 12 with a `ternary` operator. You'll need to do research!
 
