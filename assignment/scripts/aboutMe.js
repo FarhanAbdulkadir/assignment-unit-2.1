@@ -43,7 +43,8 @@ let friendsPets = 2;
 
 
 // 10 - Add two pets to your `pets` variable
-pets=+2;
+pets+=2;
+console.log(pets);
 // 11 - Create a constant variable called `allowedPets` and set it to a number value of your choice
 const allowedPets =5;
 
@@ -51,7 +52,9 @@ const allowedPets =5;
 //      if adventurous is true, set `result` to be "Adventures are great!", 
 //      if it's not true,  set `result` to be "How about we stay home?"
 //      Console log the value of `result`
-let result;
+
+
+var result;
 if(adventurous){
   result = "Adventures are great!";
 }else{
@@ -94,6 +97,7 @@ console.log(petStatus)
 //      be sure to think through all the scenarios. 
 //      console.log `mostPets` after the conditional has run.
 
+
 // 16 - Make a variable called `luckyResult`
 //      Write a *switch* statement that sets `luckyResult` to:
 //      "First is the worst" if your lucky number is 1
@@ -123,8 +127,9 @@ console.log(luckyResult);
 
 
 // 17 -- Rewrite question 12 with a `ternary` operator. You'll need to do research!
-
-
+ 
+result= adventurous ? "Adventures are great!" : "How about we stay home?"
+console.log(result)
 
 
 
